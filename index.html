@@ -1,159 +1,281 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<title>Discovering Variable Binding Circuitry with Desiderata</title>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Locating casual components by optimizing a mask over examples exercising a circuit." />
-<meta property="og:title" content="Discovering Variable Binding Circuitry with Desiderata" />
-<meta property="og:description" content="Locating casual components by optimizing a mask over examples exercising a circuit." />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" /> 
-<meta name="twitter:title" content="Discovering Variable Binding Circuitry with Desiderata" />
-<meta name="twitter:description" content="Locating casual components by optimizing a mask over examples exercising a circuit." />
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+  <title>Discovering Variable Binding Circuitry with Desiderata</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Locating casual components by optimizing a mask over examples exercising a circuit." />
+  <meta property="og:title" content="Discovering Variable Binding Circuitry with Desiderata" />
+  <meta property="og:description"
+    content="Locating casual components by optimizing a mask over examples exercising a circuit." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Discovering Variable Binding Circuitry with Desiderata" />
+  <meta name="twitter:description"
+    content="Locating casual components by optimizing a mask over examples exercising a circuit." />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
-<style>
-.relatedthumb {
-  float:left; width: 200px; margin: 3px 10px 7px 0;
-}
-.relatedblock {
-  clear: both;
-  display: inline-block;
-}
-.bold-sc {
-  font-variant: small-caps;
-  font-weight: bold;
-}
-.cite, .citegroup {
-  margin-bottom: 8px;
-}
-:target {
-  background-color: yellow;
-}
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FD12LWN557"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date()); gtag('config', 'G-FD12LWN557');
-</script>
+  <style>
+    .relatedthumb {
+      float: left;
+      width: 200px;
+      margin: 3px 10px 7px 0;
+    }
+
+    .relatedblock {
+      clear: both;
+      display: inline-block;
+    }
+
+    .bold-sc {
+      font-variant: small-caps;
+      font-weight: bold;
+    }
+
+    .cite,
+    .citegroup {
+      margin-bottom: 8px;
+    }
+
+    :target {
+      background-color: yellow;
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FD12LWN557"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date()); gtag('config', 'G-FD12LWN557');
+  </script>
 
 </head>
+
 <body class="nd-docs">
-<div class="nd-pageheader">
- <div class="container">
- <h1 class="lead">
-   Discovering
-   <nobr class="widenobr">Variable Binding Circuitry</nobr>
-   with Desiderata
- </h1>
-<address>
-  <nobr><a href="https://xanderdavies.com/" target="_blank"
-  >Xander Davies</a><sup>*1</sup>,</nobr>
-  <nobr><a href="https://www.maxnadeau.com/" target="_blank"
-  >Max Nadeau</a><sup>*1</sup>,</nobr>
-  <nobr><a href="https://nix07.github.io/" target="_blank"
-  >Nikhil Prakash</a><sup>*2</sup>,</nobr>
-  <nobr><a href="https://tamarott.github.io/" target="_blank"
-  >Tamar Rott Shaham</a><sup>3</sup>,</nobr>
-  <nobr><a href="https://baulab.info/" target="_blank"
-  >David Bau</a><sup>2</sup></nobr>
- <br>
-  <nobr><sup>1</sup><a href="https://seas.harvard.edu/computer-science" target="_blank"
-  >Harvard University</a></nobr>,
-  <nobr><sup>2</sup><a href="https://khoury.northeastern.edu/" target="_blank"
-  >Northeastern University</a>,</nobr>
-  <nobr><sup>3</sup><a href="https://www.csail.mit.edu/" target="_blank"
-  >MIT CSAIL</a></nobr>;
-<nobr><sup>*</sup>Equal contribution</nobr>
+  <div class="nd-pageheader">
+    <div class="container">
+      <h1 class="lead">
+        Discovering
+        <nobr class="widenobr">Variable Binding Circuitry</nobr>
+        with Desiderata
+      </h1>
+      <address>
+        <nobr><a href="https://xanderdavies.com/" target="_blank">Xander Davies</a><sup>*1</sup>,</nobr>
+        <nobr><a href="https://www.maxnadeau.com/" target="_blank">Max Nadeau</a><sup>*1</sup>,</nobr>
+        <nobr><a href="https://nix07.github.io/" target="_blank">Nikhil Prakash</a><sup>*2</sup>,</nobr>
+        <nobr><a href="https://tamarott.github.io/" target="_blank">Tamar Rott Shaham</a><sup>3</sup>,</nobr>
+        <nobr><a href="https://baulab.info/" target="_blank">David Bau</a><sup>2</sup></nobr>
+        <br>
+        <nobr><sup>1</sup><a href="https://seas.harvard.edu/computer-science" target="_blank">Harvard University</a>
+        </nobr>,
+        <nobr><sup>2</sup><a href="https://khoury.northeastern.edu/" target="_blank">Northeastern University</a>,</nobr>
+        <nobr><sup>3</sup><a href="https://www.csail.mit.edu/" target="_blank">MIT CSAIL</a></nobr>;
+        <nobr><sup>*</sup>Equal contribution</nobr>
 
-</address>
- </div>
-</div><!-- end nd-pageheader -->
+      </address>
+    </div>
+  </div><!-- end nd-pageheader -->
 
-<div class="container">
-<div class="row justify-content-center text-center">
+  <div class="container">
+    <div class="row justify-content-center text-center">
 
-<p>
-<a href="https://arxiv.org/pdf/2303.07345.pdf" class="d-inline-block p-3 align-top" target="_blank"><img height="100" width="78" src="images/paper-thumb.png" style="border:1px solid; margin: 0 38px;" alt="ArXiv Preprint thumbnail" data-nothumb=""><br>ArXiv<br>Preprint</a>
-<a href="https://github.com/rohitgandikota/erasing" class="d-inline-block p-3 align-top" target="_blank"><img height="100" width="78" src="images/code-thumb.png" style="border:1px solid; margin: 0 38px;" alt="Github code thumbnail" data-nothumb=""><br>Source Code<br>Github</a>
-<a href="https://erasing.baulab.info/weights/esd_models/" class="d-inline-block p-3 align-top" target="_blank"><img height="100" width="78" src="images/data-thumb.png" style="border:1px solid; margin: 0 38px;" alt="Data thumbnail" data-nothumb=""><br>Fine-Tuned<br>Model  Weights</a>
-<a href="https://huggingface.co/spaces/baulab/Erasing-Concepts-In-Diffusion" class="d-inline-block p-3 align-bottom" target="_blank"><img height="78" width="104" src="images/demo3x4-thumb.png" style="border:1px solid" alt="Huggingface demo thumbnail" data-nothumb=""><br>Huggingface<br>Demo</a>
-</p>
+      <p>
+        <a href="https://arxiv.org/pdf/2307.03637.pdf" class="d-inline-block p-3 align-top" target="_blank"><img
+            height="100" width="78" src="images/paper-thumb.png" style="border:1px solid; margin: 0 38px;"
+            alt="ArXiv Preprint thumbnail" data-nothumb=""><br>ArXiv<br>Preprint</a>
+        <a href="https://github.com/Nix07/binding-circuit-discovery" class="d-inline-block p-3 align-top"
+          target="_blank"><img height="100" width="78" src="images/code-thumb.png"
+            style="border:1px solid; margin: 0 38px;" alt="Github code thumbnail" data-nothumb=""><br>Source
+          Code<br>Github</a>
+      </p>
 
-<div class="card" style="max-width: 1020px;">
-<div class="card-block">
-<h3>How to locate causal model components quickly?</h3>
-<p>
-Some discussion of previous research and what problem this research addresses.
-</p>
-<p>
-In this paper, we propose a method for
-<b>locating causal model components by optimizing over an intervention</b>.
-Given just a small data set exercising the circuits to be probed,
-say something here.
-</p>
-</div><!--card-block-->
-</div><!--card-->
+      <div class="card" style="max-width: 1020px;">
+        <div class="card-block">
+          <h3>How to locate causal model components quickly?</h3>
+          <p>
+            Many approaches for identifying causal model components rely on <b>brute-force activation patching</b>, a
+            method that is both <b>slow</b> and <b>inefficient</b>. Moreover, these methods often fall short in
+            identifying components that collaborate to generate a desired output.
+          </p>
+          <p>
+            In this paper, we introduce a technique for <b>automatically identifying causal model components through
+              optimization over an intervention</b>. We establish a set of desiderata, representing the causal
+            attributes of the model components involved in the specific task. Utilizing a synthetically generated
+            dataset aligned with these desiderata, we optimize a binary mask over the model components to pinpoint the
+            causal elements. The resulting optimized mask identifies the model components that encode the desired
+            information, as semantically probed by the desiderata.
+          </p>
+        </div><!--card-block-->
+      </div><!--card-->
 
-</div><!--row-->
-  
-<div class="row">
-<div class="col">
-  
-<figure class="center_image" style="margin-top: 30px">
-  <center><img src="images/paper/main.png" style="width:100%; max-width:800px"></center>
-  <figcaption>
-   Something explaining the main method.
-  </figcaption>
-</figure>
+    </div><!--row-->
 
-  <h2>Why use desiderata to locate model components? </h2>
-  <p>
-  Something about efficiency of optimization.
-  </p>
-  
-<h2>How to locate model components using a test set?</h2>
-  <p>
-  Some thing here.
-  </p>
-  <figure class="center_image" style="margin-top: 30px">
-    <center><img src="images/paper/esd.png" style="width:100%; max-width:800px"></center>
-    <figcaption>
-      Somecaption here.
-    </figcaption>
-  </figure>
-  
-  Something here.
-  </p>
-  
-<h2>How to cite</h2>
+    <div class="row">
+      <div class="col">
 
-<p>The preprint can be cited as follows.
-</p>
+        <figure class="center_image" style="margin-top: 30px">
+          <center><img src="images/paper/figure_1.png" style="width:100%; max-width:800px"></center>
+          <figcaption>
+            Figure 1: <b>Localizing computation with desiderata.</b> The figure depicts training with a single
+            (original, alternate, target) tuple within a desideratum. We learn a mask <i>w</i> that combines activations
+            from an alternate sequence <i>a</i> into the computation of the model on the input of the original sequence
+            <i>o</i> such that the output <i>y</i> moves towards the target <i>t</i>.
+          </figcaption>
+        </figure>
 
-<div class="card">
-<h3 class="card-header">bibliography</h3>
-<div class="card-block">
-<p style="text-indent: -3em; margin-left: 3em;" class="card-text clickselect">
-Xander Davies, Max Nadeau, Nikhil Prakash, Tamar Rott Shaham, David Bau.
-<em>Discovering Variable Binding Circuitry with Desiderata.</em>" arXiv preprint <nobr><a href="https://arxiv.org/abs/2307.03637">arXiv:2307.03637</a> (2023).</nobr>
-</p>
-</div>
-<h3 class="card-header">bibtex</h3>
-<div class="card-block">
-<pre class="card-text clickselect">
+        <h2>Why use desiderata-based masking to locate model components? </h2>
+        <p>
+          A significant limitation of current methods for identifying the circuit responsible for a specific task is
+          that, while they aid in localizing components within the neural network, they fail to offer insights into
+          the semantics of these components. In other words, they do not tell you what the components are doing. This
+          is where our method comes in. We use desiderata to guide the optimization of the mask. This allows us to not
+          only locate the components, but also <b>understand what they are doing</b>. This is a major advantage of our
+          method over existing methods.
+        </p>
+
+        <h2>How to locate model components using a test set?</h2>
+        <p>
+          Follow these steps to locate model components using the desiderata-based masking technique:
+        <ol>
+          <li><b>Specify the model component granularity to explore</b>: Specify the granularity
+            of the model components to explore. This can be at the level of layers, neurons, or attention
+            heads. More granular components is more computational expensive, but allows for
+            more specific localization of a model behavior.
+          </li>
+          <li><b>Define the desiderata</b> with various types of interventions on the desired circuit. These are the
+            causal attributes of the model components involved in the task under investigation.
+          </li>
+          <li><b>Generate a synthetic dataset</b> aligned with the desiderata. Each desideratum <i>d</i> corresponds to
+            a set of <i>n</i> 3-tuple, each
+            of which consists of an original sequence <i>(o)</i>, an alternate
+            sequence <i>(a)</i>, and a target value <i>(t)</i>. When the activation of
+            the sought-after circuitry generated with <i>o</i> is replaced with
+            the corresponding activation generated with <i>a</i>, the model
+            should output <i>t</i>. The target value <i>(t)</i> is determined based
+            on the nature of the intervention: it can remain equal to the
+            output of <i>o</i> (indicating no change in the output is expected),
+            be altered to match the output of <i>a</i>, or be set to a completely
+            different third value.
+            <figure class="center_image" style="margin-top: 30px">
+              <center><img src="images/paper/figure_2.png" style="width:100%; max-width:800px"></center>
+              <figcaption>
+                Figure 2. <b>Variable Binding Desiderata</b>. Each desideratum is a set of original <i>(o)</i>,
+                alternate <i>(a)</i>, and
+                target <i>(t)</i> 3-tuples. In the Value Dependence desideratum, patching should change the output to
+                the alternate's output; in the Operation
+                Invariance desideratum, patching should have no effect.
+              </figcaption>
+            </figure>
+          </li>
+          <li><b>Learn a binary mask over model components</b> to pinpoint the causal elements. The mask is optimized
+            to minimize the difference between the model output on the original sequence after the intervention and the
+            target value.
+
+            <figure class="center_image" style="margin-top: 30px">
+              <center><img src="images/paper/DCM_eqns.png" style="width:75%; max-width:800px"></center>
+            </figure>
+
+            We use l<sub>0.5</sub> regularization with tunable strength λ over the mask entries to encourage
+            patching only a sparse set of model components.
+          </li>
+        </ol>
+        </p>
+        </p>
+
+        <h2>Varibale Binding Circuit: A Proof of Concept</h2>
+        <p>
+          As a proof
+          of concept, we apply our method to automatically discover shared <b>variable binding circuitry</b> in
+          LLaMA-13B, which retrieves variable values for
+          multiple arithmetic tasks. Our method successfully localizes variable binding to only 9 attention
+          heads (of the 1.6k) and one MLP in the final token’s residual stream.
+        </p>
+        <!-- <figure class="center_image" style="margin-top: 30px">
+          <center><img src="images/paper/esd.png" style="width:100%; max-width:800px"></center>
+          <figcaption>
+            Somecaption here.
+          </figcaption>
+        </figure> -->
+
+        <h2>Related Works</h2>
+        <p>Our work builds upon the existing research that aims to localize model components responsible for performing
+          specific tasks:
+        </p>
+        <p class="citation">
+          <a href="https://arxiv.org/pdf/2202.05262.pdf">
+            <img src="images/related_works/rome.svg" alt="ROME (Meng et. al 2023)">
+            Kevin Meng, David Bau, Alex Andonian, Yonatan Belinkov. Locating and Editing Factual Associations in GPT.
+            Advances in Neural Information Processing Systems (2023).
+          </a>
+          <br>
+          <b>Notes:</b> Proposed <i>Causal Tracing</i> to locate factual associations. This uncovers a specific sequence
+          of steps within middle-layer feed-forward modules that play a role in mediating factual predictions during the
+          processing of subject tokens.
+        </p>
+
+        <!-- <p class="citation">
+          <a href="https://arxiv.org/pdf/2211.00593.pdf">
+            <img src="images/related_works/IOI.png" alt="IOI (Wang et. al 2022)">
+            Kevin Wang, Alexandre Variengien, Arthur Conmy, Buck Shlegeris & Jacob Steinhardt. Interpretability in the
+            Wild: a Circuit for Indirect Object Identification in GPT-2 Small. arXiv preprint (2022).
+          </a>
+          <br>
+          <b>Notes:</b>
+        </p> -->
+
+        <p class="citation">
+          <a href="https://arxiv.org/pdf/2305.08809.pdf">
+            <img src="images/related_works/BDAS.png" alt="BDAS (Wu et. al 2024)">
+            Zhengxuan Wu, Atticus Geiger, Christopher Potts, Noah D. Goodman. Interpretability at
+            Scale: Identifying Causal Mechanisms in Alpaca. arXiv preprint (2024).
+          </a>
+          <br>
+          <b>Notes:</b> Proposed <i>Boundless Distributed Alignment Search (Boundless DAS)</i> to uncover the alignments
+          between interpretable
+          symbolic algorithms and the neural network's internal representations.
+        </p>
+
+        <p class="citation">
+          <a href="https://arxiv.org/pdf/2304.14997.pdf">
+            <img src="images/related_works/ACDC.png" alt="ACDC (Conmy et. al 2023)">
+            Arthur Conmy, Augustine N. Mavor-Parker, Aengus Lynch, Stefan Heimersheim, Adrià Garriga-Alonso. Towards
+            Automated Circuit Discovery for Mechanistic Interpretability. arXiv preprint (2023).
+          </a>
+          <br>
+          <b>Notes:</b> Proposed <i>Automatic Circuit DisCovery (ACDC)</i> to automatically discover the circuits based
+          on the choosen metric and dataset.
+        </p>
+
+        <h2>How to cite</h2>
+
+        <p>The preprint can be cited as follows.
+        </p>
+
+        <div class="card">
+          <h3 class="card-header">bibliography</h3>
+          <div class="card-block">
+            <p style="text-indent: -3em; margin-left: 3em;" class="card-text clickselect">
+              Xander Davies, Max Nadeau, Nikhil Prakash, Tamar Rott Shaham, David Bau.
+              <em>Discovering Variable Binding Circuitry with Desiderata.</em>" arXiv preprint <nobr><a
+                  href="https://arxiv.org/abs/2307.03637">arXiv:2307.03637</a> (2023).</nobr>
+            </p>
+          </div>
+          <h3 class="card-header">bibtex</h3>
+          <div class="card-block">
+            <pre class="card-text clickselect">
 @article{davies2023discovering,
   title={Discovering Variable Binding Circuitry with Desiderata},
   author={Davies, Xander and Max Nadeau and Nikhil Prakash and Tamar Rott Shaham and David Bau},
@@ -161,31 +283,31 @@ Xander Davies, Max Nadeau, Nikhil Prakash, Tamar Rott Shaham, David Bau.
   year={2023}
 }
 </pre>
-</div>
-</div>
-</p>
+          </div>
+        </div>
+        </p>
 
-</div>
-</div><!--row -->
-</div> <!-- container -->
+      </div>
+    </div><!--row -->
+  </div> <!-- container -->
 
-<footer class="nd-pagefooter">
-  <div class="row">
-    <div class="col-6 col-md text-center">
-      <a href="https://baulab.info/">About the Bau Lab</a>
+  <footer class="nd-pagefooter">
+    <div class="row">
+      <div class="col-6 col-md text-center">
+        <a href="https://baulab.info/">About the Bau Lab</a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
 <script>
-$(document).on('click', '.clickselect', function(ev) {
-  var range = document.createRange();
-  range.selectNodeContents(this);
-  var sel = window.getSelection();
-  sel.removeAllRanges();
-  sel.addRange(range);
-});
+  $(document).on('click', '.clickselect', function (ev) {
+    var range = document.createRange();
+    range.selectNodeContents(this);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  });
 </script>
-</html>
 
+</html>
