@@ -14,25 +14,25 @@ h2 {
 .nd-pageheader {
   padding: 2rem 15px;
   margin-bottom: 1.5rem;
-  color: #3C2013;
+  color: #000000;
   text-align: center;
-  background-color: #F4D700;
+  background-color: #dbdbdb;
 }
 
 .nd-pageheader a, .nd-pageheader a.likelink {
-  color: #3C2013;
+  color: #000000;
 }
 
 .nd-pagefooter {
   margin-top: 1.5rem;
   padding: 1rem;
-  color: #3C2013;
+  color: #000000;
   text-align: center;
-  background-color: #F4D700;
+  background-color: #dbdbdb;
 }
 
 .nd-pagefooter a {
-  color: #3C2013;
+  color: #000000;
 }
 
 .nd-pageheader .container {
